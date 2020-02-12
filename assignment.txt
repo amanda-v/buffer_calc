@@ -1,0 +1,4 @@
+All tasks are solved:
+1. develop the functions with 1 recipe
+2. patch in all the recipes
+3. after the UI design is provided, implement the design

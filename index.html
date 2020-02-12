@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="ELISA Analysis - Free ELISA Software, ELISA Curve Fitting, ELISA Data Analysis Software, 4PL Curve Fitting, ELISA Calculator">
+        <meta name="author" content="">
+        <title>ELISA Analysis - Boster Biological Technology</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link href="https://www.bosterbio.com/landing/material_design_kit/assets/css/material-kit.css?v=2.0.5" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/buffercalc.css" />
+        <script type="text/javascript" charset="utf-8">
+            var max = 1100,min = 960;
+        </script>
+        <script src="./code.jquery.com/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>    
+        <script type="text/javascript"
+                src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    </head>
+    <body class="index-page sidebar-collapse">
+        <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('https://www.bosterbio.com/media/scienctist_bg.jpg');">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-10 ml-auto mr-auto">
+                    <div class="brand">
+                    <h1>Boster Buffer Calculator</h1>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" main main-raised section" id="bufferCalc">
+            <div class="container">
+                <div class="clearfix">
+                    <p>This buffer calculator provides an easy-to-use tool to calculate buffer molarity and prepare buffer solutions using the formula weight of the reagent as well as your desired volume (L, mL, or uL) and concentration (M, mM, or nM).</p>
+                    <p>To calculate the amount of buffer needed, please select the desired buffer from the Selection menu. The empirical formula, pKa, buffer pH range, formula weight and product list will appear. Enter the desired final volume and desired concentration and click “Calculate Mass.”</p>
+                    <p>The exact mass of the buffer will then be calculated in grams and a step-by-step buffer recipe is automatically provided to assist in the buffer preparation process.</p>
+                    <p>Click on the list of product results for more detailed information of our offering of buffers and to order our products.</p>
+                </div>
+                <div class="clearfix">
+                <div class="pull-left">
+                    <div class="bufferSelectCntr">
+                    <select class="bufferSelect" id="selectBuffer" tabindex="1" name="">
+                        <option value="default" selected="selected">Make a Selection</option>
+                        <!-- <option data-index="0" value="ACES">ACES</option><option data-index="1" value="ADA">ADA</option><option data-index="2" value="ADA disodium salt">ADA disodium salt</option><option data-index="3" value="Ammonium acetate">Ammonium acetate</option><option data-index="4" value="AMPSO">AMPSO</option><option data-index="5" value="AMPSO sodium salt">AMPSO sodium salt</option><option data-index="6" value="BES">BES</option><option data-index="7" value="BES sodium salt">BES sodium salt</option><option data-index="8" value="Bicine">Bicine</option><option data-index="9" value="BIS-TRIS">BIS-TRIS</option><option data-index="10" value="BIS-TRIS hydrochloride">BIS-TRIS hydrochloride</option><option data-index="11" value="BIS-TRIS propane">BIS-TRIS propane</option><option data-index="12" value="Boric acid">Boric acid</option><option data-index="13" value="CABS">CABS</option><option data-index="14" value="Cacodylic acid">Cacodylic acid</option><option data-index="15" value="Calcium acetate hydrate">Calcium acetate hydrate</option><option data-index="16" value="Calcium carbonate">Calcium carbonate</option><option data-index="17" value="Calcium phosphate dibasic">Calcium phosphate dibasic</option><option data-index="18" value="CAPS">CAPS</option><option data-index="19" value="CAPSO">CAPSO</option><option data-index="20" value="CAPSO sodium salt">CAPSO sodium salt</option><option data-index="21" value="CHES">CHES</option><option data-index="22" value="Citric acid">Citric acid</option><option data-index="23" value="Citric acid monohydrate">Citric acid monohydrate</option><option data-index="24" value="Citric acid trisodium salt">Citric acid trisodium salt</option><option data-index="25" value="DIPSO">DIPSO</option><option data-index="26" value="EPPS">EPPS</option><option data-index="27" value="Ethanolamine hydrochloride">Ethanolamine hydrochloride</option><option data-index="28" value="Glycolic acid">Glycolic acid</option><option data-index="29" value="HEPBS">HEPBS</option><option data-index="30" value="HEPES">HEPES</option><option data-index="31" value="HEPES hemisodium salt">HEPES hemisodium salt</option><option data-index="32" value="HEPES potassium salt">HEPES potassium salt</option><option data-index="33" value="HEPES sodium salt">HEPES sodium salt</option><option data-index="34" value="Imidazole">Imidazole</option><option data-index="35" value="Imidazole hydrochloride">Imidazole hydrochloride</option><option data-index="36" value="Magnesium acetate tetrahydrate">Magnesium acetate tetrahydrate</option><option data-index="37" value="MES">MES</option><option data-index="38" value="MES hemisodium salt">MES hemisodium salt</option><option data-index="39" value="MES hydrate">MES hydrate</option><option data-index="40" value="MES monohydrate">MES monohydrate</option><option data-index="41" value="MES potassium salt">MES potassium salt</option><option data-index="42" value="MES sodium salt">MES sodium salt</option><option data-index="43" value="MOBS">MOBS</option><option data-index="44" value="MOPS">MOPS</option><option data-index="45" value="MOPS hemisodium salt">MOPS hemisodium salt</option><option data-index="46" value="MOPS sodium salt">MOPS sodium salt</option><option data-index="47" value="MOPSO">MOPSO</option><option data-index="48" value="MOPSO sodium salt">MOPSO sodium salt</option><option data-index="49" value="Periodic acid">Periodic acid</option><option data-index="50" value="PIPES">PIPES</option><option data-index="51" value="PIPES dipotassium salt">PIPES dipotassium salt</option><option data-index="52" value="PIPES disodium salt">PIPES disodium salt</option><option data-index="53" value="PIPES sesquisodium salt">PIPES sesquisodium salt</option><option data-index="54" value="PIPES sodium salt">PIPES sodium salt</option><option data-index="55" value="POPSO hydrate">POPSO hydrate</option><option data-index="56" value="Potassium acetate">Potassium acetate</option><option data-index="57" value="Potassium bicarbonate">Potassium bicarbonate</option><option data-index="58" value="Potassium carbonate">Potassium carbonate</option><option data-index="59" value="Potassium citrate tribasic monohydrate">Potassium citrate tribasic monohydrate</option><option data-index="60" value="Potassium hydrogen phthalate">Potassium hydrogen phthalate</option><option data-index="61" value="Potassium phosphate dibasic">Potassium phosphate dibasic</option><option data-index="62" value="Potassium phosphate dibasic trihydrate">Potassium phosphate dibasic trihydrate</option><option data-index="63" value="Potassium phosphate monobasic">Potassium phosphate monobasic</option><option data-index="64" value="Potassium phosphate tribasic">Potassium phosphate tribasic</option><option data-index="65" value="Sodium acetate">Sodium acetate</option><option data-index="66" value="Sodium acetate trihydrate">Sodium acetate trihydrate</option><option data-index="67" value="Sodium bicarbonate">Sodium bicarbonate</option><option data-index="68" value="Sodium bitartrate monohydrate">Sodium bitartrate monohydrate</option><option data-index="69" value="Sodium cacodylate trihydrate">Sodium cacodylate trihydrate</option><option data-index="70" value="Sodium carbonate">Sodium carbonate</option><option data-index="71" value="Sodium citrate tribasic dihydrate">Sodium citrate tribasic dihydrate</option><option data-index="72" value="Sodium phosphate dibasic">Sodium phosphate dibasic</option><option data-index="73" value="Sodium phosphate dibasic dihydrate">Sodium phosphate dibasic dihydrate</option><option data-index="74" value="Sodium phosphate dibasic dodecahydrate">Sodium phosphate dibasic dodecahydrate</option><option data-index="75" value="Sodium phosphate dibasic heptahydrate">Sodium phosphate dibasic heptahydrate</option><option data-index="76" value="Sodium phosphate monobasic">Sodium phosphate monobasic</option><option data-index="77" value="Sodium phosphate monobasic dihydrate">Sodium phosphate monobasic dihydrate</option><option data-index="78" value="Sodium phosphate monobasic monohydrate">Sodium phosphate monobasic monohydrate</option><option data-index="79" value="Sodium phosphate tribasic dodecahydrate">Sodium phosphate tribasic dodecahydrate</option><option data-index="80" value="Sodium pyrophosphate dibasic">Sodium pyrophosphate dibasic</option><option data-index="81" value="Sodium pyrophosphate tetrabasic decahydrate">Sodium pyrophosphate tetrabasic decahydrate</option><option data-index="82" value="Sodium tartrate dibasic dihydrate">Sodium tartrate dibasic dihydrate</option><option data-index="83" value="Sodium tetraborate decahydrate">Sodium tetraborate decahydrate</option><option data-index="84" value="TAPS">TAPS</option><option data-index="85" value="TAPS sodium salt">TAPS sodium salt</option><option data-index="86" value="TAPSO">TAPSO</option><option data-index="87" value="TES">TES</option><option data-index="88" value="TES hemisodium salt">TES hemisodium salt</option><option data-index="89" value="TES sodium salt">TES sodium salt</option><option data-index="90" value="Tricine">Tricine</option><option data-index="91" value="Tricine">Tricine</option><option data-index="92" value="Triethanolamine hydrochloride">Triethanolamine hydrochloride</option><option data-index="93" value="Trizma(R) acetate">Trizma(R) acetate</option><option data-index="94" value="Trizma(R) base">Trizma(R) base</option><option data-index="95" value="Trizma(R) hydrochloride">Trizma(R) hydrochloride</option><option data-index="96" value="Trizma(R) maleate">Trizma(R) maleate</option><option data-index="97" value="Trizma(R) phosphate monobasic">Trizma(R) phosphate monobasic</option> -->
+                    </select>
+                    </div>
+            
+                    <div class="bufferSelectedData" >
+                    <p><strong>CAS #:</strong> <span class="bufferDataCas">26239-55-4</span></p>
+                    <p><strong>Empirical Formula:</strong> <span class="bufferDataMolecularFormula">C<sub>6</sub>H<sub>10</sub>N<sub>2</sub>O<sub>5</sub></span></p>
+                    <p><strong>pKa:</strong> <span class="bufferDataPKA">(1) 1.59 (2) 2.48 (3) 6.84</span></p>
+                    <p><strong>Buffer pH Range:</strong> <span class="bufferDataPHRange">6.0 - 7.2</span></p>
+                    <p><strong>Formula Weight (g/mol):</strong> <span class="bufferDataFormulaWeight">190.15</span></p>
+                    <!-- <p><span class="bufferDataLink"><a href="/catalog/search?term=26239-55-4&amp;interface=CAS%20No.&amp;N=0&amp;mode=match%20partialmax&amp;focus=product">View ADA Products</a></span></p> -->
+                    </div>
+            
+                </div>
+                <div class="pull-right">
+                    <form name="molarcalc">
+                    <span class="normal"><a name="mass"></a>Formula weight</span><br>
+                    <input style="border: solid #cacaca 1px; padding: 4px;" disabled="" id="inputBufferFW" class="normal" maxlength="80" size="8" name="inputBufferFW"> g/mol
+            
+                    <br><br>
+            
+                    <span class="normal">Desired final volume</span><br>
+                    <input style="border: solid #cacaca 1px; padding: 4px;" id="inputBufferDFV" class="normal" maxlength="80" size="8" name="inputBufferDFV">
+                    <select class="bufferSelect" id="bufferDFVOption" tabindex="1" name="">
+                        <option value="L" selected="selected">liters (L)</option>
+                        <option value="mL">milliliters (mL)</option>
+                        <option value="uL">microliters (ul)</option>
+                        </select>
+            
+                    <br><br>
+            
+                    <span class="normal">Desired concentration</span><br>
+                    <input id="inputBufferDC" class="normal" style="border: solid #cacaca 1px; padding: 4px;" maxlength="80" size="8" name="inputBufferDC">
+                    <select class="bufferSelect" id="bufferDCOption" tabindex="1" name="">
+                        <option value="M" selected="selected">molar (M)</option>
+                        <option value="mM">millimolar (mM)</option>
+                        <option value="nM">nanomolar (nM)</option>
+                        </select>
+            
+                    <br><br>
+            
+                    <input style="background: #503291; border: none; color: #ffffff; padding: 5px 10px 5px 10px; border-radius: 3px;" class="normal" id="calculateBtn" type="button" value="Calculate Mass">&nbsp;&nbsp;Mass=&nbsp;&nbsp;<input style="border: solid #cacaca 1px; padding: 5px;" id="resultBuffer" class="normal" readonly="readonly" maxlength="200" size="10" name="resultBuffer"> g
+                    <br><br>
+                    <div class="bufferErrors">
+                        <p class="error fwError text-danger hide" >Error with Formula Weight</p>
+                        <p class="error dfvError text-danger hide">Please check Desired Final Volume</p>
+                        <p class="error dcError text-danger hide">Please check Desired Concentration</p>
+                        <p class="error buffError text-danger hide">Please make a selection</p>
+                    </div>
+                    </form>
+                </div>
+                </div>
+                <div class="clearfix">
+                <div class="bufferCalcResults" >
+                           
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="footer">
+            <footer class="container">
+                <hr class="clearfix">
+                <p>© 1993-2020 Boster Biological Technology. All rights reserved.</p>
+            </footer>
+        </div>
+        <!-- Include jquery -->
+        <script src="./code.jquery.com/ui/1.8.24/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+        <!-- Buffer Product List in variable: bufferProductList -->
+        <script src="js/bufferProductList.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/buffercalc.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+.bufferSelectedData{
+    display: none;
+    padding-top: 10px;
+}
+.bufferCalcResults{
+    display: none;
+}
+
+.buffError, .dcError, .dfvError, .fwError{
+    display: none;
+}
