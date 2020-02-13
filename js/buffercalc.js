@@ -20,8 +20,8 @@ $(document).ready(function(){
         let volumeUnit = $('#bufferDFVOption').val();
         let concentrationUnit = $('#bufferDCOption').val();
         let result = bufferProducts.calculateBuffer(finalVolume, volumeUnit, concentration, concentrationUnit);
+        $('.error').hide();
         if (typeof result == 'number') {
-            $('.error').hide();
             $('#resultBuffer').val(result);
             let resultText = `<p>
                 <strong>Results based on your selection: </strong>
