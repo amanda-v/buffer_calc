@@ -1,4 +1,4 @@
-All tasks are solved:
-1. develop the functions with 1 recipe
-2. patch in all the recipes
-3. after the UI design is provided, implement the design
+Tasks to be solved:
+1. develop the functions with 1 recipe: solved
+2. patch in all the recipes: solved
+3. after the UI design is provided, implement the design: basic design made upon Boster Material UI Kit, Specific UI design is not provided yet from the designer.
