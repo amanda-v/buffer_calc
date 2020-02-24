@@ -1,9 +1,11 @@
 $(document).ready(function(){
+    
     //bufferProducts object is defiend in bufferProductList.js
     bufferProducts.list && bufferProducts.list.map(function(elem){
         let tempElem = `<option data-index="0" value="${elem.name}">${elem.name}</option>`;
         $('#selectBuffer').append(tempElem);
     });
+    
     $('#selectBuffer').change(function(event){
         bufferProducts.selectedBufer = bufferProducts.findByName(event.target.value);
         $('.bufferSelectedData').show();
@@ -14,6 +16,7 @@ $(document).ready(function(){
         $('.bufferDataCas').html(bufferProducts.selectedBufer.formulaWeight);
         $('#inputBufferFW').val(bufferProducts.selectedBufer.formulaWeight);
     })
+    
     $('#calculateBtn').on('click', function(){
         let finalVolume = $('#inputBufferDFV').val();
         let concentration = $('#inputBufferDC').val();
@@ -45,7 +48,5 @@ $(document).ready(function(){
         } else {
             $('.'+result).show();
         }
-    })
-    
-    
+    })    
 })
